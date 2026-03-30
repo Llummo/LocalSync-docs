@@ -2,28 +2,28 @@
 
 # Informe de Trabajo Final
 
-**Universidad:** [Nombre de la Universidad]  
-**Facultad:** [Nombre de la Facultad]  
-**Carrera:** [Nombre de la Carrera]  
-**Ciclo:** [Ciclo]  
-**Código del Curso:** [Código] — [Nombre del Curso]  
+**Universidad:** [Universidad Peruana de Ciencias Aplicadas]  
+**Facultad:** [Facultad de Ingeniería]  
+**Carrera:** [Ingeniería de software]  
+**Ciclo:** [2026 - 1]  
+**Código del Curso:** [1ASI0729] — [Desarrollo de Aplicaciones Open Source]  
 **NRC:** [NRC]  
-**Profesor:** [Nombre del Profesor]  
+**Profesor:** [Efraín Ricardo Bautista Ubillús]  
 
 ---
 
-**Startup:** [Nombre del Startup]  
+**Startup:** [LocalSync]  
 **Producto:** [Nombre del Producto]  
 
 **Integrantes:**
 
 | Código | Apellidos y Nombres |
 |--------|---------------------|
-| [Código] | [Apellido, Nombre] |
+| [u202411310] | [Azama Fukuda, Juan Pablo] |
 | [Código] | [Apellido, Nombre] |
 | [Código] | [Apellido, Nombre] |
 
-**Mes y Año:** [Mes, Año]
+**Mes y Año:** [Marzo, 2026]
 
 ---
 
