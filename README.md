@@ -355,7 +355,59 @@ Además del impacto económico directo, la experiencia del cliente se ve profund
 
 #### 5.1.1. Software Development Environment Configuration
 
-[Descripción del entorno de desarrollo: IDEs, herramientas, versiones y configuraciones utilizadas.]
+
+**Figma**
+
+
+ Producto SaaS utilizado para la elaboración de la propuesta de diseño de interfaces (UX/UI), incluyendo la creación de Wireframes, Mock-ups y Prototipos interactivos para el Landing Page y las aplicaciones web. Permite la colaboración en tiempo real del equipo de diseño.
+
+Ruta de referencia: https://www.figma.com/
+
+**HTML5 & CSS3**
+
+
+Lenguajes estándar de marcado y hojas de estilo utilizados para definir la estructura semántica y el diseño visual estático de los templates en el Landing Page y los componentes de las Frontend Web Applications.
+
+Ruta de referencia: Herramientas nativas del estándar web (No aplica ruta de descarga). Documentación de referencia: https://developer.mozilla.org/
+
+**Angular Framework**
+
+Framework de desarrollo principal para la construcción de las Frontend Web Applications en formato SPA (Single Page Application). Se encarga de la lógica de presentación en el lado del cliente, el enrutamiento y el consumo de la API RESTful utilizando TypeScript como lenguaje de programación.
+
+Ruta de descarga: https://angular.io/cli
+
+
+
+
+**Miro**
+<div style="text-align: center;">
+  <img src = "https://w7.pngwing.com/pngs/613/411/png-transparent-miro-app-logo-tech-companies-thumbnail.png" alt = "miro-logo" class = "miro-logo" id = "miro-logo">
+</div>
+
+ Plataforma de pizarra virtual (SaaS) empleada para las sesiones colaborativas de análisis de dominio y la elaboración de los diagramas de Big Picture EventStorming y Design-Level EventStorming.
+
+Ruta de referencia: https://miro.com/
+
+**Structurizr**
+
+
+Herramienta de modelado utilizada para el diseño y la documentación de la arquitectura de software de la solución, aplicando estrictamente el C4 Model (Context, Container y Component diagrams).
+
+Ruta de referencia: https://structurizr.com/
+
+**Microsoft SQL Server**
+
+Sistema de Gestión de Bases de Datos Relacionales (RDBMS) utilizado para el diseño y almacenamiento persistente de los datos transaccionales de los Bounded Contexts del sistema. Soporta la integridad referencial y las consultas estructuradas necesarias para la lógica del backend.
+
+Ruta de descarga: https://www.microsoft.com/sql-server/sql-server-downloads
+
+**Spring Boot (Java)**
+
+
+Framework backend basado en Java utilizado para la construcción, configuración y despliegue de los RESTful Web Services. Gestiona la lógica de negocio, la seguridad, las transacciones y la exposición de los endpoints que serán consumidos por las aplicaciones web.
+
+Ruta de descarga: https://spring.io/projects/spring-boot
+
 
 #### 5.1.2. Source Code Management
 
