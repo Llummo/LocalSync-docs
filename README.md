@@ -452,15 +452,25 @@ Ruta de descarga: https://spring.io/projects/spring-boot
 
 #### 5.1.2. Source Code Management
 
-El proyecto utiliza GitHub como sistema de control de versiones mediante un repositorio público en una cuenta personal. Este repositorio registra los cambios y permite el seguimiento del desarrollo del backend.
+El equipo utiliza GitHub como plataforma de control de versiones para el seguimiento de modificaciones del proyecto. El repositorio correspondiente al backend (Web Services) se encuentra disponible en el siguiente enlace:
 
-Se adoptó una estrategia basada en GitFlow. La rama main contiene versiones estables del sistema. La rama develop funciona como entorno de integración. Las nuevas funcionalidades se desarrollan en ramas feature/*, como feature/setup-inicial.
+**Repositorio Backend:**  
+https://github.com/THECOMAX/Backend
 
-La integración de cambios se realiza mediante Pull Requests hacia la rama develop. Este proceso asegura un control previo antes de incorporar modificaciones al código principal.
+En dicho repositorio se almacena el código fuente del proyecto, así como los archivos relacionados a pruebas unitarias y de integración, con el objetivo de asegurar la calidad del software.
 
-Se emplea una convención de commits con prefijos semánticos como feat y fix. Esta práctica facilita la lectura del historial de cambios y mejora la organización del proyecto.
+Se adoptó el modelo GitFlow como estrategia de organización del repositorio. La rama `main` contiene versiones estables del sistema. La rama `develop` actúa como entorno de integración donde se consolidan los cambios antes de su liberación.
 
-Se considera la protección de la rama main como medida para restringir modificaciones directas y mantener la estabilidad del sistema.
+Para el desarrollo de funcionalidades, se utilizan ramas con la convención `feature/<nombre-funcionalidad>`, por ejemplo `feature/setup-inicial`. Estas ramas permiten aislar el desarrollo y facilitar su integración mediante Pull Requests hacia `develop`.
+
+Para la gestión de versiones, se emplea el estándar **Semantic Versioning (SemVer)**, utilizando el formato `MAJOR.MINOR.PATCH` (por ejemplo, `1.0.0`). Las versiones mayores representan cambios incompatibles, las menores nuevas funcionalidades y los parches correcciones de errores.
+
+En cuanto a la nomenclatura de ramas adicionales, se definen:
+
+- `release:<version>`: preparación de versiones estables
+- `fix:<descripcion>`: corrección de errores críticos en producción
+
+Finalmente, se adoptó el estándar **Conventional Commits** para los mensajes de confirmación, utilizando prefijos como `feat`, `fix`, `docs` y `refactor`. Esta convención mejora la claridad del historial de cambios y facilita el mantenimiento del proyecto.
 
 #### 5.1.3. Source Code Style Guide & Conventions
 
@@ -470,7 +480,23 @@ Para garantizar la claridad y cohesión del código fuente en el desarrollo de l
 
 #### 5.1.4. Software Deployment Configuration
 
-[Descripción de la configuración de despliegue: entornos, pipelines CI/CD y servicios en la nube utilizados.]
+La configuración de despliegue del sistema define el proceso mediante el cual los productos digitales pasan desde el código fuente hasta su ejecución en un entorno accesible para los usuarios.
+
+Para el backend (Web Services), desarrollado con Spring Boot, el proceso de despliegue inicia a partir del repositorio en GitHub. El código fuente es gestionado en la rama `develop`, y una vez validado, se integra a la rama `main` para su versión estable.
+
+El proceso de construcción del proyecto se realiza mediante herramientas propias del ecosistema Java, generando un archivo ejecutable (`.jar`) que contiene la aplicación completa. Este artefacto permite ejecutar el servidor de forma independiente en cualquier entorno compatible con Java.
+
+Se contempla el uso de una plataforma Cloud para el despliegue del backend, donde el servicio es publicado y accesible mediante una URL pública. Esta plataforma gestiona la ejecución del servidor, la disponibilidad del servicio y la escalabilidad básica del sistema.
+
+Para la configuración del entorno, se utilizan variables de entorno que permiten definir parámetros sensibles como credenciales de base de datos, puertos de ejecución y configuraciones específicas del sistema, evitando su exposición en el código fuente.
+
+En relación al flujo de integración y despliegue continuo (CI/CD), se considera la automatización del proceso a través de herramientas como GitHub Actions, que permiten ejecutar tareas como la compilación del proyecto y la verificación del código ante cada cambio en el repositorio.
+
+Para el caso del frontend y el landing page, el despliegue se realiza mediante plataformas de hosting web que permiten publicar aplicaciones estáticas o SPA, asegurando su acceso desde navegadores mediante una URL pública.
+
+Este enfoque permite mantener un flujo ordenado desde el desarrollo hasta la publicación, asegurando consistencia entre versiones, control de cambios y disponibilidad del sistema.
+
+<img src="./assets/captura-backend-repo.png" alt="captura-backend-repo" width="627" height="312">
 
 ### 5.2. Landing Page, Services & Applications Implementation
 
